@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import StarshipSearch from "./components/StarshipSearch";
 import StarshipList from "./components/StarshipList";
 import { getStarships, searchStarships } from "./services/starshipService";
-import "./App.css"; // Add this line to import the styles
+import "./App.css"; 
 
 function App() {
   const [starships, setStarships] = useState([]);
