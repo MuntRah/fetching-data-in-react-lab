@@ -3,15 +3,17 @@ import StarshipCard from "./StarshipCard";
 
 function StarshipList({ starships }) {
   return (
-    <div>
+    <section>
       <h2>Starships </h2>
       <h2>number of results :{starships.length} </h2>
-      <div>
+
+      <ul>
         {starships.map((starship) => (
           <StarshipCard key={starship.name} starship={starship} />
         ))}
-      </div>
-    </div>
+         </ul>
+      </section>
+   
   );
 }
 
