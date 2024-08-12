@@ -1,7 +1,7 @@
 
 import React, { useState } from "react";
 
-function StarshipSearch({ n }) {
+function StarshipSearch({ onSearch }) {
   const [query, setQuery] = useState("");
 
   const handleSubmit = (e) => {
@@ -14,10 +14,10 @@ function StarshipSearch({ n }) {
       <label htmlFor="search">search term:</label>
       <input
         type="text"
-        value={query}
+        value={query.name}
         name="search"
         onChange={(e) => setQuery(e.target.value)}
-        placeholder="Search for a starship..."
+       
       />
       <button type="submit">Search</button>
     </form>
